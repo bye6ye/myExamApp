@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/entrance"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_entrance"
+                android:layout_width="95dp"
+                android:layout_height="33dp"
+                android:text="@string/entrance"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="113dp"
+                tools:layout_editor_absoluteY="115dp" />
+
+            <EditText
+                android:id="@+id/Login"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/style_btn_black60"
+                android:ems="10"
+                android:hint="@string/login"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="54dp"
+                tools:layout_editor_absoluteY="180dp" />
+
+            <EditText
+                android:id="@+id/Password"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/style_btn_black60"
+                android:ems="10"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:singleLine="false"
+                android:textAlignment="center"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="52dp"
+                tools:layout_editor_absoluteY="233dp" />
+
+            <Button
+                android:id="@+id/buttonComeIn"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/style_btn_black95"
+                android:text="@string/comeIn"
+                android:textSize="14sp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="179dp"
+                tools:layout_editor_absoluteY="321dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonBack"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|left"
+            android:layout_margin="10dp"
+            android:background="@drawable/style_btn_black95"
+            android:text="@string/back"
+            android:textSize="14sp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="54dp"
+            tools:layout_editor_absoluteY="321dp" />
+    </FrameLayout>
+
+</RelativeLayout>

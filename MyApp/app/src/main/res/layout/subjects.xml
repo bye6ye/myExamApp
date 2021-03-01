@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/purple_500"
+                android:gravity="center"
+                android:text="@string/Subjects"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="70dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="clip_horizontal|center|clip_vertical">
+
+                        <TableRow
+                            android:id="@+id/line1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="clip_horizontal|center"
+                            android:gravity="center">
+
+                            <Button
+                                android:id="@+id/button_English"
+                                android:layout_width="150dp"
+                                android:layout_height="86dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:background="#984E91"
+                                android:text="@string/English"
+                                android:textAllCaps="false"
+                                tools:ignore="MissingConstraints" />
+
+                            <Button
+                                android:id="@+id/button_Optimiz"
+                                android:layout_width="150dp"
+                                android:layout_height="86dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:background="#4F618E"
+                                android:text="@string/MethodOpt"
+                                android:textAllCaps="false"
+                                tools:ignore="MissingConstraints" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/line2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center">
+
+                            <Button
+                                android:id="@+id/button_KSE"
+                                android:layout_width="150dp"
+                                android:layout_height="86dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:background="#4C8A2A"
+                                android:text="@string/KSE"
+                                android:textAllCaps="false"
+                                tools:ignore="MissingConstraints" />
+
+                            <Button
+                                android:id="@+id/button_Evm"
+                                android:layout_width="150dp"
+                                android:layout_height="86dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:background="#EC4F4F"
+                                android:text="@string/SetiEvm"
+                                android:textAllCaps="false"
+                                android:textColorLink="#FFFFFF"
+                                tools:ignore="MissingConstraints" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/line3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center">
+
+                            <Button
+                                android:id="@+id/button_KrossPlatf"
+                                android:layout_width="150dp"
+                                android:layout_height="86dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:allowUndo="false"
+                                android:text="@string/krossPlatf"
+                                android:textAllCaps="false"
+                                app:rippleColor="#B56225"
+                                tools:ignore="MissingConstraints" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/line4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </TableLayout>
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_back"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|left"
+            android:layout_margin="10dp"
+            android:text="@string/back"
+            android:textSize="14sp"
+            tools:ignore="MissingConstraints" />
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            app:layout_constraintBottom_toTopOf="@+id/subject"
+            tools:layout_editor_absoluteX="31dp" />
+
+        <TextView
+            android:id="@+id/subject"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            app:layout_constraintBottom_toTopOf="@+id/count_exams"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name"
+            app:layout_constraintVertical_bias="0.757" />
+
+        <TextView
+            android:id="@+id/count_exams"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            app:layout_constraintBottom_toTopOf="@+id/login"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            app:layout_constraintBottom_toTopOf="@+id/password"
+            tools:layout_editor_absoluteX="16dp" />
+
+        <TextView
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            app:layout_constraintBottom_toTopOf="@+id/button_edit"
+            tools:layout_editor_absoluteX="16dp" />
+
+        <Button
+            android:id="@+id/button_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="onClickEdit"
+            android:onClick="onClickEdit"
+            android:layout_marginTop="50dp"
+            android:text="edit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name" />
+
+        <Button
+            android:id="@+id/button_remove"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="onClickDelete"
+            android:onClick="onClickDelete"
+            android:layout_marginTop="20dp"
+            android:text="delete"
+            app:layout_constraintBottom_toTopOf="@+id/button_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_edit"
+            app:layout_constraintVertical_bias="0.568" />
+
+        <Button
+            android:id="@+id/button_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="onClickReturn"
+            android:onClick="onClickReturn"
+            android:text="back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_edit"
+            app:layout_constraintVertical_bias="0.725" />
+    </LinearLayout>
+
+</RelativeLayout>

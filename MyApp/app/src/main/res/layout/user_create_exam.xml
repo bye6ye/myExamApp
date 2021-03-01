@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/purple_500"
+            android:gravity="center"
+            android:text="Создание экзамена"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            tools:ignore="MissingConstraints" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/Subject"
+                    android:layout_width="220dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/style_btn_black20"
+                    android:ems="10"
+                    android:hint="@string/SubjectName"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    tools:ignore="MissingConstraints" />
+
+                <EditText
+                    android:id="@+id/countOfQuestions"
+                    android:layout_width="220dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/style_btn_black20"
+                    android:ems="10"
+                    android:hint="Колличество вопросов"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    tools:ignore="MissingConstraints" />
+
+                <EditText
+                    android:id="@+id/Questions"
+                    android:layout_width="220dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/style_btn_black20"
+                    android:ems="10"
+                    android:hint="Распределение"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    tools:ignore="MissingConstraints" />
+
+                <Button
+                    android:id="@+id/buttonCreate"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/style_btn_black95"
+                    android:text="@string/Create"
+                    android:textSize="14sp"
+                    tools:ignore="MissingConstraints" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_back"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|left"
+            android:layout_margin="10dp"
+            android:background="@drawable/style_btn_black95"
+            android:text="@string/back"
+            android:textSize="14sp"
+            tools:ignore="MissingConstraints" />
+    </FrameLayout>
+
+</RelativeLayout>

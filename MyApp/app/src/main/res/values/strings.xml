@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">My App</string>
+    <string name="begin">Начать</string>
+    <string name="end">Закрыть</string>
+    <string name="exam">Экзамен</string>
+    <string name="entrance">Вход</string>
+    <string name="test">Тест</string>
+    <string name="login">Логин</string>
+    <string name="password">Пароль</string>
+    <string name="comeIn">Войти</string>
+    <string name="Subjects">Предметы</string>
+    <string name="CodeExam">Код экзамена</string>
+    <string name="MyExam">Мои экзамены</string>
+    <string name="Report">Отчет</string>
+    <string name="Create">Создать</string>
+    <string name="CreateExam">Создать экзамен</string>
+    <string name="CreateUser">Создать пользователя</string>
+    <string name="AllUsers">Все пользователи</string>
+    <string name="AllExams">Все экзамены</string>
+    <string name="MyExams">Мои экзамены</string>
+    <string name="FIO">ФИО</string>
+    <string name="CreatingUser">Создание пользователя</string>
+    <string name="SubjectName">Название предмета</string>
+
+
+    <string name="back">Назад</string>
+    <string name="ticket">Билет:</string>
+    <string name="ticket1">Билет 1</string>
+    <string name="question1">Вопрос</string>
+    <string name="answer1">Ответ 1</string>
+    <string name="answer2">Ответ 2</string>
+    <string name="answer3">Ответ 3</string>
+    <string name="answer4">Ответ 4</string>
+    <string name="points">Баллы</string>
+
+    <string name="krossPlatf">Кросс-платформенная разработка</string>
+    <string name="SetiEvm">Сети эвм</string>
+    <string name="English">Английский язык</string>
+    <string name="MethodOpt">Методы оптимизации</string>
+    <string name="KSE">КСЕ</string>
+
+</resources>
